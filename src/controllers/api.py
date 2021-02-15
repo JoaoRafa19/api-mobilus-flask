@@ -1,5 +1,5 @@
 from flask import Flask
-from src.instance import instance
-app, api = instance.app, instance.api 
+from src.instance import app
+app, api = app.app, app.api 
 
 

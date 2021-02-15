@@ -1,6 +1,5 @@
-from src.instance import instance as appInstance
+from src.instance import app
 
 #API Routes
 from src.controllers.routes import *
 
-appInstance.run()
