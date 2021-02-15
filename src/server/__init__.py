@@ -14,5 +14,5 @@ class Server():
     )
 
   def run(self, ):
-    self.app.run(debug=True)
+    self.app.run(debug=False, port=5000, threaded=True)
 
