@@ -13,8 +13,8 @@ class Main(Resource):
     response = {
     "title":"Covid 19 Status API",
     "powered_by":"Python/Flask",
-    "description":"API for get covid19 status"
-
+    "description":"API for get covid19 status",
+    "owner":'João Pedro Rafael Santos Silva'
     }
     return response
     
