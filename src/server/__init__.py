@@ -14,6 +14,6 @@ class Server():
     )
 
   def run(self, ):
-    port = int(os.environ.get('PORT', 5000))
+    port = int(os.environ.get('PORT'))
     self.app.run(debug=False, port=port, threaded=True)
 
