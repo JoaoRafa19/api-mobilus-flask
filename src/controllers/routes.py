@@ -2,8 +2,15 @@ from datetime import date, time, datetime
 import requests
 from flask import jsonify
 from flask_restplus import Resource
-from .api import api
 import asyncio
+from flask import Flask
+from src.server import Server
+
+aplicaiton = Server()
+
+api = aplicaiton.api
+app = aplicaiton.app
+
 
 @api.route('/info')
 class Main(Resource):
